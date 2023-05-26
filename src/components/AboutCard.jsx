@@ -1,12 +1,12 @@
 import React from 'react'
 import {Card} from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-
+import '../App.css';
 function AboutCard() {
 	return (
 		
 		<Fade right duration={1000}>
-			<Card className="bg-transparent border-dark text-dark text-center w-75">
+			<Card className="bg-transparent border-dark text-dark custom-width mx-auto">
 				<Card.Header>
 					<h1>About</h1>
 				</Card.Header>
