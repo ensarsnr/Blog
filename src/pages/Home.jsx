@@ -4,8 +4,6 @@ import { Container, Row } from "react-bootstrap";
 import TitlePage from "../view/TitlePage.jsx";
 import About from "../view/About.jsx";
 import Projects from "../view/Projects.jsx";
-import Skills from "../view/Skills.jsx";
-import Footer from "../view/Footer.jsx";
 import "../App.css";
 function Home() {
   return (
@@ -18,12 +16,6 @@ function Home() {
       </Row>
       <Row style={{ backgroundColor: "#27374D" }}>
         <Projects />
-      </Row>
-      <Row className="mt-5" style={{ backgroundColor: "#526D82" }}>
-        <Skills />
-      </Row>
-      <Row className="mt-5" style={{ backgroundColor: "#526D82" }}>
-        <Footer />
       </Row>
     </Container>
   );

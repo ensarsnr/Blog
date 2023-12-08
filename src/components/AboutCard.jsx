@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import "../App.css";
-import { BsGithub } from "react-icons/bs";
-import { BsMedium } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function AboutCard() {
   return (
@@ -17,29 +15,27 @@ function AboutCard() {
           <h1>About</h1>
         </Card.Header>
         <Card.Body className="mt-3">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with.
+          <p className="h3">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with.
+          </p>
         </Card.Body>
         <Card.Footer
           style={{ display: "flex", justifyContent: "space-around" }}
         >
           <div>
-            <a href="#">
-              <BsMedium color="black" size={"50px"} />
+            <a href="https://github.com/ensarsnr">
+              <BsGithub color="#24292e" size={"50px"} />
             </a>
           </div>
           <div>
-            <a href="#">
-              <BsGithub color="black" size={"50px"} />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <BsTwitter color="#068DA9" size={"50px"} />
+            <a href="www.linkedin.com/in/ensar-şener-b416412a3">
+              <BsLinkedin color="#007b5" size={"50px"} />
             </a>
           </div>
         </Card.Footer>
